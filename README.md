@@ -8,9 +8,11 @@ This API allows you to search for suppliers based on location, nature of busines
  `/api/supplier/query`
 
 ## **Prerequisites**
--**Java 11+**
--**Spring Boot 2.5+**
--**A running PostgreSQL database**
+-Java 11+
+
+-Spring Boot 2.5+
+
+-A running PostgreSQL database
 
 #### 1. Search for Suppliers
 
@@ -118,4 +120,12 @@ curl -X POST http://localhost:8080/api/supplier/query \
 **Pagination**
 
 The API supports pagination via the page and limit parameters in the request body. If there are more results than the specified limit, they can be retrieved by increasing the page parameter.
+
+**Accessing Swagger UI**
+
+Once the application is running, you can access the Swagger UI by navigating to the following URL in your browser:
+
+```bash
+http://localhost:8080/swagger-ui.html
+```
 
